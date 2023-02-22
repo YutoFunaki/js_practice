@@ -14,3 +14,16 @@
 // const age = 28;
 // const message1 = `私の名前は${named}です。年齢は${age}です。`;
 // console.log(message1);
+
+
+//アロー関数
+// const func1 = (str) => {
+//   return str;
+// };
+// console.log(func1("func2"));
+
+// const func2 = (num1, num2) => {
+//   return num1 + num2;
+// };
+// console.log(func2(10, 30));
+
