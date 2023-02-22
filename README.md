@@ -1,1 +1,1 @@
-# UdemyのJS入門のメモ
+UdemyのJS入門のメモ
