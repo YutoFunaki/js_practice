@@ -27,3 +27,17 @@
 // };
 // console.log(func2(10, 30));
 
+
+//分割代入
+// const myProfile = {
+//   names: "named",
+//   age: 28,
+// };
+// const message2 = `名前は${myProfile.names}、年齢は${myProfile.age}`;
+
+// const { names, age} = myProfile;
+// const message3 = `名前は${names}、年齢は${age}`;
+
+// const profile = ["named", 28];
+// const [namey, ages] = profile;
+// const message4 = `名前は${namey}、年齢は${ages}`;
