@@ -1,1 +1,1 @@
-# js_practice
+# UdemyのJS入門のメモ
