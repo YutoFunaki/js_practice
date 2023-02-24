@@ -41,3 +41,7 @@
 // const profile = ["named", 28];
 // const [namey, ages] = profile;
 // const message4 = `名前は${namey}、年齢は${ages}`;
+
+//デフォルト値
+const sayHello = (names = "Guest") => console.log(`こんにちは！${names}さん！`);
+sayHello("papapa");//引数が何もない場合はundifineとなる
