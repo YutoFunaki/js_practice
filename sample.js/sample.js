@@ -62,5 +62,13 @@
 // console.log(num2); //2
 // console.log(arr3); //[3, 4, 5]
 
+//配列のコピー、結合
+const arr4 = [10, 20];
+const arr5 = [30, 40];
 
+// const arr6 = [...arr4];
+// console.log(arr6); //[10, 20]
+
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7); //[10, 20, 30, 40]
 
