@@ -16,7 +16,7 @@
 // console.log(message1);
 
 
-//アロー関数
+//アロー関数 関数が一行で済む場合は矢印の後にそのまま書いていい
 // const func1 = (str) => {
 //   return str;
 // };
@@ -43,5 +43,24 @@
 // const message4 = `名前は${namey}、年齢は${ages}`;
 
 //デフォルト値
-const sayHello = (names = "Guest") => console.log(`こんにちは！${names}さん！`);
-sayHello("papapa");//引数が何もない場合はundifineとなる
+// const sayHello = (names = "Guest") => console.log(`こんにちは！${names}さん！`);
+// sayHello("papapa");//引数が何もない場合はundifineとなる
+
+//スプレッド構文
+//配列の展開
+// const arr1 = [1,2];
+// console.log(arr1); //[1,2]
+// console.log(...arr1); //1 2
+
+// const sumFunc = (num1, num2) => console.log(num1, num2);
+// sumFunc(...arr1);
+
+//まとめる
+// const arr2 = [1, 2, 3, 4, 5];
+// const [num1, num2, ...arr3] = arr2;
+// console.log(num1); //1
+// console.log(num2); //2
+// console.log(arr3); //[3, 4, 5]
+
+
+
