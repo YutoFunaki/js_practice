@@ -95,20 +95,37 @@ nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`))
 // nameArr.map((name) => console.log(name))
 // //tanaka yamada sato
 
-//filter
-const numArr = [1, 2, 3, 4, 5];
-const newNumArr = numArr.filter((num) => {
-  return num % 2 === 1;//2で割って1余る＝配列の中の奇数だけ返す
-})
-console.log(newNumArr);
-//[1, 3, 5]
+// //filter
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;//2で割って1余る＝配列の中の奇数だけ返す
+// })
+// console.log(newNumArr);
+// //[1, 3, 5]
 
-const newNameArr = nameArr.map((name) =>{
-  if (name === "tanaka") {
-    return name
-  } else {
-    return `${name},hello`
-  }
-})
-console.log(newNameArr);
-//["tanaka,hello", "yamada", "sato"]
+// const newNameArr = nameArr.map((name) =>{
+//   if (name === "tanaka") {
+//     return name
+//   } else {
+//     return `${name},hello`
+//   }
+// })
+// console.log(newNameArr);
+// //["tanaka,hello", "yamada", "sato"]
+
+//三項演算子
+//ある条件　？　条件がtrueの時 : 条件がfalseの時
+const val1 = 1 > 0 ? "true" : "false";
+console.log(val1);//false
+
+const num = 1300;
+console.log(num.toLocaleString());
+//1,300
+
+const formattedNum = typeof num === "number" ? num.toLocaleString() : "type to Int";
+console.log(formattedNum);
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "100over" : "under100";
+}
+console.log(checkSum(10, 20))
