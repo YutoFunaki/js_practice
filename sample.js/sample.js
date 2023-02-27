@@ -62,5 +62,53 @@
 // console.log(num2); //2
 // console.log(arr3); //[3, 4, 5]
 
+//配列のコピー、結合
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
+
+// const arr6 = [...arr4];
+// console.log(arr6); //[10, 20]
+
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7); //[10, 20, 30, 40]
 
 
+//mapやfilterを使った配列の処理
+
+//const nameArr = ["tanaka", "yamada", "sato"];
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+//   //tanaka yamada sato
+// }
+
+nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`))
+//1番目はtanakaです
+//2番目はyamadaです
+//3番目はsatoです
+
+// // const nameArr2 = nameArr.map((name)=>{
+// //   return name;
+// // })
+// // console.log(nameArr2);
+// //["tanaka", "yamada", "sato"]
+
+// nameArr.map((name) => console.log(name))
+// //tanaka yamada sato
+
+//filter
+const numArr = [1, 2, 3, 4, 5];
+const newNumArr = numArr.filter((num) => {
+  return num % 2 === 1;//2で割って1余る＝配列の中の奇数だけ返す
+})
+console.log(newNumArr);
+//[1, 3, 5]
+
+const newNameArr = nameArr.map((name) =>{
+  if (name === "tanaka") {
+    return name
+  } else {
+    return `${name},hello`
+  }
+})
+console.log(newNameArr);
+//["tanaka,hello", "yamada", "sato"]
