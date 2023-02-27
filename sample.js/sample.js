@@ -81,7 +81,7 @@
 //   //tanaka yamada sato
 // }
 
-nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`))
+// nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`))
 //1番目はtanakaです
 //2番目はyamadaです
 //3番目はsatoです
@@ -115,38 +115,38 @@ nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です`))
 
 //三項演算子
 //ある条件　？　条件がtrueの時 : 条件がfalseの時
-const val1 = 1 > 0 ? "true" : "false";
-console.log(val1);//false
+// const val1 = 1 > 0 ? "true" : "false";
+// console.log(val1);//false
 
-const num = 1300;
-console.log(num.toLocaleString());
-//1,300
+// const num = 1300;
+// console.log(num.toLocaleString());
+// //1,300
 
-const formattedNum = typeof num === "number" ? num.toLocaleString() : "type to Int";
-console.log(formattedNum);
+// const formattedNum = typeof num === "number" ? num.toLocaleString() : "type to Int";
+// console.log(formattedNum);
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "100over" : "under100";
-}
-console.log(checkSum(10, 20))
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100over" : "under100";
+// }
+// console.log(checkSum(10, 20))
 
 //論理演算子の本当の意味 && ||
-const flag = true;
-const flag2 = false;
+// const flag = true;
+// const flag2 = false;
 
-if (flag1 || flag2) {
-  console.log("1or2=true")
-}
-if (flag1 && flag2) {
-  console.log("1&2=true")
-}
+// if (flag1 || flag2) {
+//   console.log("1or2=true")
+// }
+// if (flag1 && flag2) {
+//   console.log("1&2=true")
+// }
 
-//||は左側がfalseなら右側を返す
-const number = 100;
-const fee = number || "noInt";
-console.log(fee)
+// //||は左側がfalseなら右側を返す
+// const number = 100;
+// const fee = number || "noInt";
+// console.log(fee)
 
-//&&は左側がtrueなら右側を返す
-const number2 = 100;
-const fee2 = number2 && "noInt";
-console.log(fee2)
+// //&&は左側がtrueなら右側を返す
+// const number2 = 100;
+// const fee2 = number2 && "noInt";
+// console.log(fee2)
