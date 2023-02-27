@@ -129,3 +129,24 @@ const checkSum = (num1, num2) => {
   return num1 + num2 > 100 ? "100over" : "under100";
 }
 console.log(checkSum(10, 20))
+
+//論理演算子の本当の意味 && ||
+const flag = true;
+const flag2 = false;
+
+if (flag1 || flag2) {
+  console.log("1or2=true")
+}
+if (flag1 && flag2) {
+  console.log("1&2=true")
+}
+
+//||は左側がfalseなら右側を返す
+const number = 100;
+const fee = number || "noInt";
+console.log(fee)
+
+//&&は左側がtrueなら右側を返す
+const number2 = 100;
+const fee2 = number2 && "noInt";
+console.log(fee2)
