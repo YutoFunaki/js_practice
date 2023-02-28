@@ -13,6 +13,12 @@ const onClickAdd = () => {
   const li = document.createElement("li");
   //innerTextは要素のなかに何を入れるかを決めることができる。今回は入力された値のinputTextを入れる。
   li.innerText = inputText;
+
+  //divタグの子要素に各要素を設定
+  div.appendChild(li);
+
+  //未完了のリストに追加
+  document.getElementById("incomplete-list").appendChild(div);
 }
 
 document
