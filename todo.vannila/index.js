@@ -5,6 +5,16 @@ const onClickAdd = () => {
   const inputText = document.getElementById("add-text").value;
   document.getElementById("add-text").value = "";
 
+  createIncompleteList(inputText);
+};
+
+//未完了リストから指定の要素を削除
+const deleteFromIncompleteList = (target) => {
+  document.getElementById("incomplete-list").removeChild(target);
+}
+
+//未完了リストに追加する関数
+const createIncompleteList = (text) => {
   //div生成
   const div = document.createElement("div");
   div.className = "list-row";
@@ -12,7 +22,7 @@ const onClickAdd = () => {
   //luタグ作成
   const li = document.createElement("li");
   //innerTextは要素のなかに何を入れるかを決めることができる。今回は入力された値のinputTextを入れる。
-  li.innerText = inputText;
+  li.innerText = text;
 
   //button(完了)タグ作成
   const completeButton = document.createElement("button");
@@ -45,6 +55,7 @@ const onClickAdd = () => {
 
     //テキスト取得
     const text = backButton.parentNode.firstElementChild.innerText;
+    createIncompleteList(text);
   });
 
   //divタグの子要素に書く要素を設定
@@ -72,16 +83,7 @@ const onClickAdd = () => {
   //未完了のリストに追加
   document.getElementById("incomplete-list").appendChild(div);
 
-}
 
-//未完了リストから指定の要素を削除
-const deleteFromIncompleteList = (target) => {
-  document.getElementById("incomplete-list").removeChild(target);
-}
-
-//未完了リストに追加する関数
-const createIncompleteList = () => {
-  
 }
 
 document
